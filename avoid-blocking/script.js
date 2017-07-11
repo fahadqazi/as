@@ -9,6 +9,7 @@ btn.addEventListener("click", function() {
   document.body.appendChild(p);
 
   // simulate blocking / long running operation
+  // blocks for 10seconds
   const start = Date.now()
   const delaySeconds = 10;
   while (Date.now() < start + delaySeconds * 1000) {}

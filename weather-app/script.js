@@ -1,8 +1,6 @@
 // http://openweathermap.org/current
 // http://openweathermap.org/weather-conditions
 
-//navigator.geolocation.getCurrentPosition(success, error);
-
 document.getElementById("city").value = "London, UK"
 load()
 

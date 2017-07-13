@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Hello Plunker!</h1>
+    <div id="content"></div>
+</body>
+
+<script>
+    //document.getElementById("content").innerHTML = "Main content here from JS";
+
+    onReady()
+
+    function onReady() {
+        const content = document.getElementById("content");
+        if (!content) {
+            setTimeout(onReady, 100);
+            return;
+        }
+
+        content.innerHTML = "Main content here from JS";
+    }
+</script>
+
+</html>
